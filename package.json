@@ -1,0 +1,33 @@
+{
+  "name": "parse-deps",
+  "version": "0.1.0",
+  "description": "parse the ast for require calls.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tetsuo/parse-deps.git"
+  },
+  "keywords": [
+    "parse",
+    "require",
+    "dependencies",
+    "acorn",
+    "ast",
+    "walk"
+  ],
+  "author": "Onur Gunduz <ogunduz@gmail.com> (http://onurgunduz.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tetsuo/parse-deps/issues"
+  },
+  "homepage": "https://github.com/tetsuo/parse-deps",
+  "dependencies": {
+    "acorn": "^0.7.0"
+  }
+}
