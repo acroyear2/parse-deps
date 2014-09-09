@@ -11,9 +11,7 @@ function parsedeps (src) {
     CallExpression: function (node) {
       if (node.callee.type === 'Identifier' && 
           node.callee.name === 'require') {
-        deps = deps.concat(node.arguments.map(function (dep) {
-          return dep.value;
-        }));
+        deps.push(node.arguments[0].value);
       }
     }
   });
