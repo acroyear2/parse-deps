@@ -11,7 +11,7 @@ function parsedeps (src, callback) {
     CallExpression: function (node) {
       if (node.callee.type === 'Identifier' && 
           node.callee.name === 'require') {
-        if (typeof callback === 'function') fn(node);
+        if (typeof callback === 'function') callback(node);
         deps.push(node.arguments[0].value);
       }
     }
